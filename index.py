@@ -19,6 +19,8 @@ class Quotes(Base):
     text = Column(String(1000), nullable=False)
     weight = Column(Integer, nullable=False)
 
+# Quotes.__table__.create(engine)
+
 
 quotes_json = []
 with open("text.txt") as file_handler:
